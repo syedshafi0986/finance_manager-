@@ -1,0 +1,276 @@
+/* Home Component */
+.home-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.navigation-buttons {
+  margin: 20px 0;
+}
+
+.navigation-buttons button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar Component */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #007bff; /* Blue background */
+  padding: 10px;
+}
+
+.navbar-left a, 
+.navbar-right a {
+  color: white; /* Ensure text is visible on blue background */
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.auth-link {
+  color: white; /* Ensure "Login" and "Signup" are visible */
+  font-weight: bold;
+}
+
+.navbar-right .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right button {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-right button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Login and Register Forms */
+.login-container, .register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-form, .register-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form h2, .register-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.login-form input, .register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.login-form input:focus, .register-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form button, .register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover, .register-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form p, .register-form p {
+  color: #666;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Expenditure Details */
+.expenditure-details, .income-details {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.expenditure-details h3, .income-details h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.expenditure-details ul, .income-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expenditure-item, .income-details li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.expenditure-item p, .income-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.expenditure-item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expenditure-details p, .income-details p.no-data {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+/* Expenditure Form */
+.expenditure-form, .income-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
+
+.expenditure-form h3, .income-form h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.expenditure-form label, .income-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.expenditure-form input, .income-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.expenditure-form button, .income-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.expenditure-form button:hover, .income-form button:hover {
+  background-color: #0056b3;
+}
+
+.expenditure-form .success-message, .income-form .success-message {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.expenditure-form .error-message, .income-form .error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Summary Details */
+.summary-details {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary-info {
+  font-size: 18px;
+  color: #333;
+}
+
+.summary-info p {
+  margin: 10px 0;
+}
+
+.summary-info strong {
+  color: #007bff;
+}
+
+.error {
+  color: #ff4d4d;
+  background-color: #ffe6e6;
+  border: 1px solid #ff4d4d;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+}
